@@ -1,37 +1,58 @@
-/* Import a modern, monospaced font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
-
-/* --- CSS Variables for easy theme management --- */
-:root {
-  --primary-bg: #0d1117;     /* A dark navy, almost black */
-  --secondary-bg: #161b22;   /* A slightly lighter dark gray for cards */
-  --accent-color: #58a6ff;   /* A vibrant blue for links and highlights */
-  --glow-color: rgba(88, 166, 255, 0.5); /* Glow effect color */
-  --text-color: #c9d1d9;      /* Light gray for primary text */
-  --text-secondary: #8b949e; /* Muted gray for secondary text */
-  --border-color: #30363d;   /* Border color for cards and sections */
-}
-
-/* --- Global Styles --- */
 body {
-  background-color: var(--primary-bg);
-  color: var(--text-color);
-  font-family: 'Roboto Mono', monospace;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  background: #f9f9f9;
+  color: #333;
 }
 
-h1, h2, h3 {
-  color: #ffffff; /* Brighter white for headings */
+header {
+  background: #2d2d2d;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-a {
-  color: var(--accent-color);
+nav a {
+  margin: 0 10px;
+  color: #ffc107;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
-a:hover {
-  color: #ffffff;
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2d2d2d;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #2d2d2d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
 }
